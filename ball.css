@@ -3,9 +3,9 @@ body{
     margin: 0;
 }
 .mycanvas{
-    background-color: blueviolet;
-    height: 400px;
-    width: 400px;
+    background-color: bisque;
+    height: 500px;
+    width: 500px;
     position:absolute;
     margin: auto;
     left: 0;
@@ -15,16 +15,57 @@ body{
 }
 
 .ball{
-    background-color: bisque;
+    background-color: purple;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     position:relative;
     top:100px;
     left:220px;
-    animation: bounce 0.9s infinite;
+    animation: bounce 1.5s infinite;
 }
 
 @keyframes bounce{
-    10%{}
+    10%{
+        height: 50px;
+        width: 50px;
+    }
+    30%{
+        height: 50px;
+        width: 40px;
+    }
+    50%{
+        height: 30px;
+        width: 57px;
+        transform: translateY(240px);
+    }
+    75%{
+        height: 50px;
+        width: 57px;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.countainer{
+    width: 57px;
+    height: 50px;
+}
+.shadow{
+    background-color: rgba(8,8,8,0.5);
+    height: 10px;
+    width: 65px;
+    border-radius: 50%;
+    position: relative;
+    top: 310px;
+    left: 212px;
+    z-index: -1;
+    animation: shrink 1.5s infinite;
+}
+
+@keyframes shrink{
+    50%{
+        transform: scaleX(0.5);
+    }
 }
