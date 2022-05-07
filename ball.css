@@ -13,3 +13,18 @@ body{
     top: 0;
     bottom: 0;
 }
+
+.ball{
+    background-color: bisque;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position:relative;
+    top:100px;
+    left:220px;
+    animation: bounce 0.9s infinite;
+}
+
+@keyframes bounce{
+    10%{}
+}
